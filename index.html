@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ignacio Lopez</title>
     <style>
-
+       @media only screen and (max-width: 600px){
         
         body {
             background-color: rgb(105, 101, 101);
@@ -36,12 +36,19 @@
 
         .prueba {
             display: flex;
+            flex-direction: column;
             justify-content: space-around; 
             width: 110%;
             height: auto;
             margin: 15px 0;
             background-color: rgb(0, 0, 0);
             color: rgb(255, 255, 255);
+
+        }
+        .prueba div {
+            margin: 0 auto;
+            
+
         }
 
         img {
@@ -161,6 +168,166 @@
             text-align: center;
             margin-top: 20px;
         }
+    }
+    @media only screen and (min-width: 600px){
+            body {
+            background-color: rgb(105, 101, 101);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+            header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            padding: 20px;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            color: red;
+            padding: 0;
+        }
+
+        header ul li {
+            margin: 10px;
+        }
+
+        .prueba .prueba2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around; 
+            width: 110%;
+            height: auto;
+            margin: 15px 0;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        img {
+            width: 150px;
+        }
+
+        .tz img {
+            border-radius: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: rgb(136, 3, 3);
+        }
+
+        .caja {
+            width: 30%; 
+            height: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .caja img {
+            border-radius: 70%;
+        }
+
+        .caja p {
+            font-size: 12px;
+            text-align: center; 
+        }
+
+        .kira {
+            color: white;
+        }
+
+        .inicio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20%;
+        }
+
+        .enlaces {
+            margin-top: 10px;
+        }
+
+        .conjunto {
+            display: flex; 
+            flex-direction: row;
+            margin: 20px 0; 
+        }
+
+        .abajo1, .abajo3 {
+            background-color: #D9D9D9;
+            width: 200px;
+            height: 400px;
+            text-align: center; 
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+        }
+
+        .abajo2 {
+            background-color: #D9D9D9;
+            width: 100px;  
+            height: 400px; 
+            text-align: center; 
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+        }
+
+        .parrafo1, .parrafo2, .parrafo3 {
+            margin: 5px;
+            font-size: 14px;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .confetti {
+            position: fixed;
+            top: -10px;
+            width: 10px;
+            height: 10px;
+            background-color: #ff69b4;
+            opacity: 0.6;
+            border-radius: 50%;
+            animation: confetti-animation 3s linear infinite;
+        }
+
+        @keyframes confetti-animation {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0.6; }
+            100% { transform: translateY(1000px) rotate(360deg); opacity: 0; }
+        }
+
+        #inviteButton {
+            padding: 10px 20px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            display: block;
+            margin: 20px auto; /* Centrar el botón */
+        }
+
+        #message {
+            display: none;
+            font-size: 24px;
+            color: #ff69b4;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
+        
     </style>
 </head>
 <body>
@@ -183,23 +350,26 @@
 
     <main>
         <div class="prueba">
-            <div class="caja">
-                <img src="talentos ignacio.png" alt="Ignacio's talents">
-                <h1>Talentos</h1>
-                <p>Me encanta hacer manualidades y todo lo que tenga que ver con detalles o tecnología.</p>
+            <div class="prueba2">
+                <div class="caja">
+                    <img src="talentos ignacio.png" alt="Ignacio's talents">
+                    <h1>Talentos</h1>
+                    <p>Me encanta hacer manualidades y todo lo que tenga que ver con detalles o tecnología.</p>
+                </div>
+    
+                <div class="caja">
+                    <img src="deporte 1.jpeg" alt="Deportes">
+                    <h1>Deportes</h1>
+                    <p>Taekwondo, voley y otras disciplinas.</p>
+                </div>
+    
+                <div class="caja">
+                    <img src="logros ignacio.jpg" alt="Logros destacados">
+                    <h1>Logros</h1>
+                    <p>Logros destacados... próximamente.</p>
+                </div>
             </div>
-
-            <div class="caja">
-                <img src="deporte 1.jpeg" alt="Deportes">
-                <h1>Deportes</h1>
-                <p>Taekwondo, voley y otras disciplinas.</p>
-            </div>
-
-            <div class="caja">
-                <img src="logros ignacio.jpg" alt="Logros destacados">
-                <h1>Logros</h1>
-                <p>Logros destacados... próximamente.</p>
-            </div>
+            
         </div>
 
         <div class="conjunto">
