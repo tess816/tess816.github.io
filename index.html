@@ -1,447 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CIBERACOSO</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignacio Lopez</title>
     <style>
-      body{
-       background-color: #818BAE; 
-      }
-      
-      @media only screen and (min-width: 600px) {
-       
-        .parrafoizquierdoimagen{
-        width:500px ;
-        padding-top: 30px;
-    }
-        .imagenciberacoso2{
-            width: 800px;
-        }
-        .contenedor-parrafo-imagen{
-            display:flex;
-            flex-direction: row;
-            justify-content: space-around;
+        body {
+            background-color: rgb(105, 101, 101);
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
 
-        .video-contenedor{
+        header {
             display: flex;
-            justify-content: center;
-            margin-bottom: 30px;
-        }
-       
-        .contenedorBannerContacto {
-          display: flex;
-          flex-direction: row;
-          width: 100%;
-          margin: 10px 0 10px 0;
-          background-color: #7c0808;
-          color: white;
-        }
-        .imagen1ignacio {
-          display: flex;
-          justify-content: end;
-        }
-
-        h1 {
-          font-size: 24px;
-          color: rgb(253, 3, 3);
-          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-            sans-serif;
-        }
-        .caja {
-          width: 150%;
-          height: 150;
-          padding: 10px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        .caja img {
-          border-radius: 70%;
-          width: 120px;
-        }
-        .caja p {
-          font-size: 12px;
-        }
-        .pie {
-          background-color: #403737;
-          color: #a48e8e;
-        }
-
-        .imagenes {
-          display: flex;
-          height: 100%;
-          width: 100%;
-        }
-        .contenedorParrafosImagen {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-        }
-        .contenedorDeParrafos {
-          width: 600px;
-          
-        }
-        .imagen2ignacio {
-          position: absolute;
-          display: none;
-          opacity: 0;
-          left: -9999px;
-          visibility: hidden;
-          margin-top: 50000px;
-        }
-       p{
-        font-size: 24px;
-       }
-       .parrafo34{
-        margin-top: 0px;
-       }
-       /*Garbriela*/
-       .contenedorh1 {
-          width: 100%;
-          height: 800px;
-          background-image: url("SID_2020_Hero_0.jpg 1.png");
-          background-size: cover;
-          display: flex;
-          justify-content: center;
-          background-repeat: no-repeat;
-        }
-        .tituloPrincipal {
-          font-size: 60px;
-          color: rgb(220, 31, 247);
-        }
-        .subtitulo {
-          text-align: center;
-        }
-        .imagen1 {
-          display: flex;
-          justify-content: center;
-        }
-
-        .contenedorTipos {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-        }
-        
-      }
-      
-      @media only screen and (max-width: 600px) {
-       
-        .parrafoizquierdoimagen{
-        width:500px ;
-        padding-top: 30px;}
-
-        .imagenciberacoso2{
-            width: 600px;
-        }
-        .contenedor-parrafo-imagen{
-            display:flex;
             flex-direction: column;
-            justify-content: space-around;
-            width: 100px}
-
-            .video-contenedor{
-            display: flex;
+            align-items: center;
             justify-content: center;
-            margin-bottom: 30px;
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            padding: 20px;
         }
-       
-        .contenedorBannerContacto {
-          display: flex;
-          flex-direction: column;
-          width: 100%;
-          margin: 10px 0 10px 0;
-          background-color: #7c0808;
-          color: white;
+
+        header ul {
+            list-style: none;
+            display: flex;
+            color: red;
+            padding: 0;
+        }
+
+        header ul li {
+            margin: 10px;
+        }
+
+        .prueba {
+            display: flex;
+            justify-content: space-around; 
+            width: 110%;
+            height: auto;
+            margin: 15px 0;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        img {
+            width: 150px;
+        }
+
+        .tz img {
+            border-radius: 100%;
         }
 
         h1 {
-          font-size: 24px;
-          color: rgb(253, 3, 3);
-          font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
-            sans-serif;
+            font-size: 24px;
+            color: rgb(136, 3, 3);
         }
+
         .caja {
-          width: 100%;
-          padding: 10px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+            width: 30%; 
+            height: auto;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
+
         .caja img {
-          border-radius: 70%;
-          width: 120px;
+            border-radius: 70%;
         }
+
         .caja p {
-          font-size: 12px;
-        }
-        .pie {
-          background-color: #403737;
-          color: #a48e8e;
-        }
-        .imagen1ignacio {
-          position: absolute;
-          display: none;
-          opacity: 0;
-          left: -9999px;
-          visibility: hidden;
-          margin-top: 50000px;
+            font-size: 12px;
+            text-align: center; 
         }
 
-        .imagenes {
-          display: flex;
-          height: 100%;
-          width: 100%;
-        }
-        .contenedorParrafosImagen {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-        }
-        .contenedorDeParrafos {
-          width: 600px;
-          
-        }
-       p{
-        font-size: 24px;
-       }
-       .parrafo34{
-        margin-top: 0px;
-      }
-      /*Gabriela*/
-      .contenedorh1 {
-          width: 100%;
-          height: 350px;
-          background-image: url("image\ 8.png");
-          display: flex;
-          justify-content: center;
-          align-items: flex-end;
-        }
-        .tituloPrincipal {
-          font-size: 60px;
-          color: rgb(220, 31, 247);
-        }
-        .subtitulo {
-          text-align: center;
-        }
-        .imagen1 {
-          display: flex;
-          justify-content: center;
+        .kira {
+            color: white;
         }
 
-        .contenedorTipos {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
+        .inicio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20%;
         }
-    }
 
+        .enlaces {
+            margin-top: 10px;
+        }
+
+        .conjunto {
+            display: flex; 
+            justify-content: space-around; 
+            flex-wrap: wrap; 
+            margin: 20px 0; 
+        }
+
+        .abajo1, .abajo3 {
+            background-color: #D9D9D9;
+            width: 200px;
+            height: 400px;
+            text-align: center; 
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+        }
+
+        .abajo2 {
+            background-color: #D9D9D9;
+            width: 100px;  
+            height: 400px; 
+            text-align: center; 
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+        }
+
+        .parrafo1, .parrafo2, .parrafo3 {
+            margin: 5px;
+            font-size: 14px;
+        }
+
+        .confetti {
+            position: fixed;
+            top: -10px;
+            width: 10px;
+            height: 10px;
+            background-color: #ff69b4;
+            opacity: 0.6;
+            border-radius: 50%;
+            animation: confetti-animation 3s linear infinite;
+        }
+
+        @keyframes confetti-animation {
+            0% { transform: translateY(0) rotate(0deg); opacity: 0.6; }
+            100% { transform: translateY(1000px) rotate(360deg); opacity: 0; }
+        }
+
+        #inviteButton {
+            padding: 10px 20px;
+            font-size: 20px;
+            color: #fff;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            display: block;
+            margin: 20px auto; /* Centrar el botón */
+        }
+
+        #message {
+            display: none;
+            font-size: 24px;
+            color: #ff69b4;
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
-    <div class="contenedorh1">
-        <h1 class="tituloPrincipal">CIBERACOSO</h1>
-      </div>
-      <h2 class="subtitulo">INTRODUCCIÓN</h2>
-      <div class="contenedorParrafoeIMG">
-        <p>
-          Ciberacoso es acoso o intimidación por medio de las tecnologías
-          digitales. Puede ocurrir en las redes sociales, las plataformas de
-          mensajería, las plataformas de juegos y los teléfonos móviles. Es un
-          comportamiento que se repite y que busca atemorizar, enfadar o humillar
-          a otras personas.
-        </p>
-  
-        <div class="imagen1">
-          <img
-            src="data:image/jpeg;base64,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"
-            alt=""
-          />
+</head>
+<body>
+    <header>
+        <div class="inicio">
+            <h1>Ignacio Lopez</h1>
+            <div class="tz img">
+                <img src="foto ignacio 2.jpeg" alt="Foto de Ignacio Lopez">
+            </div>
+            <h2 class="kira">Conoce más en mis redes sociales</h2>
+            <div class="enlaces">
+                <ul>
+                    <li><a href="https://www.instagram.com/i_am__tz_?igsh=MW04NWJhaGE2aWh2NA==" style="text-decoration: none; color: red;">Instagram</a></li>
+                    <li><a href="https://wa.me/qr/7X6JAJECWWGSC1" style="text-decoration: none; color: red;">WhatsApp</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100056829281839" style="text-decoration: none; color: red;">Facebook</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
-  
-      <p>El ciberacoso puede englobar varios tipos de acosos conocidos:</p>
-      <div class="contenedorTipos">
-        <div>
-          <ul>
-            <li>acoso psicológico</li>
-            <li>acecho o acoso físico</li>
-            <li>grooming</li>
-            <li>acoso en grupo</li>
-          </ul>
+    </header>
+
+    <main>
+        <div class="prueba">
+            <div class="caja">
+                <img src="talentos ignacio.png" alt="Ignacio's talents">
+                <h1>Talentos</h1>
+                <p>Me encanta hacer manualidades y todo lo que tenga que ver con detalles o tecnología.</p>
+            </div>
+
+            <div class="caja">
+                <img src="deporte 1.jpeg" alt="Deportes">
+                <h1>Deportes</h1>
+                <p>Taekwondo, voley y otras disciplinas.</p>
+            </div>
+
+            <div class="caja">
+                <img src="logros ignacio.jpg" alt="Logros destacados">
+                <h1>Logros</h1>
+                <p>Logros destacados... próximamente.</p>
+            </div>
         </div>
-        <div>
-          <ul>
-            <li>acoso laboral</li>
-            <li>acoso sexual</li>
-            <li>acoso inmobiliario</li>
-          </ul>
+
+        <div class="conjunto">
+            <div class="abajo1">
+                <p class="parrafo1">Cursos
+                    <br><br>Impresión 3D<br><br>
+                    UTN Excel: nivel fundamentos<br><br>
+                    Inglés<br><br>
+                    Word: junior<br><br>
+                    Junior Achievement Programación: nivel junior<br><br>
+                    Junior Achievement: contabilidad/finanzas<br><br>
+                    Junior Achievement: cuentas conmigo primer y segundo nivel 
+                </p>
+            </div>
+
+            <div class="abajo2">
+                <p class="parrafo2">Certificados</p>
+            </div>
+
+            <div class="abajo3">
+                <p class="parrafo3">Holaaaaaaaaaaaaaaaaaaaaa</p>
+            </div>
         </div>
-      </div>
-     <br>
-     <br>
-     <br>
-     <br>
-      <Section class="video-contenedor">
-        <iframe width="1800" height="600" src="https://www.youtube.com/embed/E-n3m9-rZC8?si=ShTiYox7EkzHLyHQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </Section>
-<div class="contenedor-parrafo-imagen">
-<div class="parrafoizquierdoimagen">
-    <p>
-    Cuando el acoso ocurre en línea, la víctima siente como si la estuvieran atacando en todas partes, 
-    hasta en su propia casa. Puede parecerle que no hay escapatoria posible.
-    Las consecuencias pueden durar largo tiempo y afectar a la víctima de muchas maneras:</p>
-    <p>
-    Mentalmente. Se siente preocupada, avergonzada, estúpida y hasta asustada o enfadada.
-    Emocionalmente. Se siente avergonzada y pierde interés en lo que le gusta.
-    Físicamente.
-</p>
-    <p>
-         Se siente cansada (pierde el sueño) o sufre dolores de estómago y de cabeza.
+    </main>
 
-        Sentirse objeto de burla o de acoso puede impedir que la víctima hable con franqueza o trate de resolver el problema. En casos extremos, el ciberacoso puede llevar a quitarse la vida.
-    </p>
-
-        <p> El ciberacoso puede afectarnos de muchas formas. Sin embargo, es posible superarlo y recuperar la confianza en nosotros mismos y la salud.</p>
-    
-</div >
-   <img class="imagenciberacoso2" src="https://www.unicef.org/sites/default/files/styles/hero_tablet/public/SID_2020_Hero_0.jpg.webp?itok=gy5_nzCx" alt="">
-</div>
-<br>
-<br>
-<br>
-    <div class="contenedorBannerContacto">
-      <div class="caja">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuiuiAO1tUkol2fUiU7sRo7ideTDUR0bwqJQ&s"
-          alt="talento"
-        />
-        <h1>telefono</h1>
-        <p>137</p>
-      </div>
-
-      <div class="caja">
-        <img
-          src="https://i.pinimg.com/474x/4c/b8/37/4cb837521b2b3bb370c380f5143acae5.jpg"
-          alt="correo"
-        />
-        <h1>correo</h1>
-        <p>delitossexuales@buenosaires.gob.ar</p>
-      </div>
-      <div class="caja">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbcI1HIgJUCnCg4DOI3gX8Skk8cesNhZF-2DE71b9pRdSnWsIgkgDMOj09W4EZZBc0aTY&usqp=CAU"
-          alt="ubicacion"
-        />
-        <h1>ubicacion</h1>
-        <p>Comisaría o enlaces del Ministerio Público Fiscal</p>
-      </div>
+    <button id="inviteButton">¡Escríbeme!</button>
+    <div id="message">
+        <p>¡Gracias por tu interés!</p>
     </div>
-    <section class="contenedorParrafosImagen">
-      <div class="contenedorDeParrafos">
-        
-        <p>
-          Si conozco un caso de ciberacoso ¿dónde puedo asesorarme? llamando a
-          la línea 137. Funciona para todo el país, las 24 horas los 365 días
-          del año.<br />
-        </p> 
-        <p>
-        También podés comunicarte con la Unidad Fiscal Especializada en
-        Ciberdelincuencia al teléfono (+54 11) 5071-0044.<br />
-      </p>
-        <p>
-          ¿Tengo que hacer la denuncia en la comisaría?<br />
-          Podés hacer la denuncia en una comisaría o en una fiscalía. Con tu
-          denuncia, empieza la investigación del caso. <br />
-        </p>
 
-        <p>
-          ¿Qué es lo primero que debo hacer al conocer un caso de ciberacoso?<br />
-          No borrar los contenidos de la computadora o teléfono celular. Las
-          conversaciones, las imágenes y los videos que el acosador y la víctima
-          hayan enviado deben ser guardados como prueba. También sirve hacer
-          impresiones de pantalla y guardarlas No amenazar o enfrentar al
-          abusador porque se alejará y será más difícil encontrarlo. Comunicate
-          con el 137
-        </p>
-      </div>
+    <script>
+        document.getElementById("inviteButton").addEventListener("click", function() {
+            document.getElementById("message").style.display = "block";
+            startConfetti();
+            // Redirigir al enlace después de un breve delay
+            setTimeout(() => {
+                window.open('https://www.instagram.com/i_am__tz_/profilecard/?igsh=MW04NWJhaGE2aWh2NA==', '_blank');
+            }, 500);
+        });
 
-      <div class="imagen1ignacio">
-        <img
-          src="https://media.ambito.com/p/2d6e0fc07d23103753ffcaf56120faf8/adjuntos/239/imagenes/038/353/0038353384/ciberacosopng.png?0000-00-00-00-00-00"
-          alt="imagen"
-          height="500px"
-          
-        />
-      </div>
-    </section>
-    <p class="parrafo34">
-      Cómo ayudar a la víctima ¿Cómo debemos actuar con los niños y niñas cuando
-      son víctimas de ciberacoso? No retarlos por haberse contactado con
-      desconocidos a través de la Web y haberles dado información íntima.
-      Recordá que los niños y niñas siempre son víctimas y que los abusadores
-      son especialistas en conseguir lo que buscan. No avergonzarlos o hacerles
-      sentir culpa. Esos sentimientos no ayudan y ador frente porque podrá
-      extorsionarlos. El abusador puede usar la vergüenza que siente el niño o
-      niña para decirle que no cuente nada de lo sucedido. Dialogar: las
-      personas adultas debe acompañar, contener y orientar a los niños y niñas
-      en estas situaciones. Es necesario acompañar de la mejor manera en una
-      situación que es angustiante. Pedir asesoramiento en la línea 137
-    </p>
-    <div class="imagen2ignacio">
-      <img
-        src="https://media.ambito.com/p/2d6e0fc07d23103753ffcaf56120faf8/adjuntos/239/imagenes/038/353/0038353384/ciberacosopng.png?0000-00-00-00-00-00"
-        alt="imagen"
-        height="500px"
-        width="100%"
-      />
-      </div>
-    <div class="pie">
-      <h3>Información de Contacto:</h3> <br />
-       <li> Dirección: Calle Ejemplo 123, Ciudad, País</li><br />
-       <li>Teléfono: +123 456 7890</li> <br />
-        <li>Correo Electrónico: contacto@prevencionciberacoso.org</li><br />
-        <li>Formulario de Contacto: Contáctanos</li><br />
-        <li>Enlaces a Redes Sociales:</li><br />
-        <li>Facebook</li><br />
-        <li>Twitter LinkedIn</li><br />
-        <li>Instagram</li><br />
-       <li>Enlaces de Navegación: Inicio</li> <br />
-        
-      <h3> Sobre Nosotros</h3>
-        <li>Blog</li><br />
-      <li>Recursos</li> <br />
-        <li>Cómo Reportar</li><br />
-        <li>FAQ</li><br />
-        <h3>Información Legal:</h3>
-        <li> Política de Privacida</li><br>
-        <li>Términos y Condiciones</li><br>
-        <li>Aviso Legal</li><br />
-        <li>Datos de la Organización:</ul><br/>
-        <ul>Nombre: Fundación Prevención Ciberacoso</ul><br />
-       <ul> Número de Registro: 12345678</ul><br />
-        <ul> Créditos del Sitio:</ul><br />
-        <ul>Diseñado por Agencia Web Ejemplo</ul><br />
-        <ul> Suscripción y Boletines:</ul><br />
-      <h3> Suscríbete a nuestro boletín para recibir noticias y actualizaciones</h3>
-       <ul> sobre la prevención del ciberacoso.</ul><br />
-       <ul> Mapas y Localización:</ul><br />
-        <ul>Ver en Google Maps</ul><br />
-       <h3>Avisos Especiales:</h3>
-       <ul>¡Nueva campaña contra el ciberacoso! Visita nuestra sección de Recursos
-        para más información sobre cómo puedes ayudar.</ul><br />
-       <ul>Certificaciones y Acreditaciones:</ul><br />
-        <ul>Certificación de Seguridad en Línea (Logo SSL)</ul><br />
-         <ul>Métodos de Pago:</ul><br />
-       <ul>Donaciones Aceptadas: Tarjeta de Crédito, PayPal, Transferencia Bancaria</ul><br />
-        <ul>(solo para donaciones)</ul><br />
-        <ul>Lenguaje y Región:</ul><br />
-        <ul>Cambiar idioma - Español | Inglés</ul><br />
-      </p>
-    </div>
-  </body>
+        function startConfetti() {
+            for (let i = 0; i < 300; i++) {
+                const confetti = document.createElement('div');
+                confetti.classList.add('confetti');
+                confetti.style.left = Math.random() * window.innerWidth + 'px';
+                confetti.style.animationDuration = 2 + Math.random() * 3 + 's';
+                confetti.style.animationDelay = Math.random() * 2 + 's';
+                document.body.appendChild(confetti);
+            }
+        }
+    </script>
+</body>
 </html>
