@@ -1,425 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ignacio Lopez</title>
-    <style>
-       @media only screen and (max-width: 600px){
-        
-        body {
-            background-color: rgb(105, 101, 101);
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: rgb(0, 0, 0);
-            width: 100%;
-            padding: 20px;
-        }
-
-        header ul {
-            list-style: none;
-            display: flex;
-            color: red;
-            padding: 0;
-        }
-
-        header ul li {
-            margin: 10px;
-        }
-
-        .prueba {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around; 
-            width: 110%;
-            height: auto;
-            margin: 15px 0;
-            background-color: rgb(0, 0, 0);
-            color: rgb(255, 255, 255);
-
-        }
-        .prueba div {
-            margin: 0 auto;
-            
-
-        }
-
-        img {
-            width: 150px;
-        }
-
-        .tz img {
-            border-radius: 100%;
-        }
-
-        h1 {
-            font-size: 24px;
-            color: rgb(136, 3, 3);
-        }
-
-        .caja {
-            width: 30%; 
-            height: auto;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .caja img {
-            border-radius: 70%;
-        }
-
-        .caja p {
-            font-size: 12px;
-            text-align: center; 
-        }
-
-        .kira {
-            color: white;
-        }
-
-        .inicio {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 20%;
-        }
-
-        .enlaces {
-            margin-top: 10px;
-        }
-
-        .conjunto {
-            display: flex; 
-            justify-content: space-around; 
-            flex-wrap: wrap; 
-            margin: 20px 0; 
-        }
-
-        .abajo1, .abajo3 {
-            background-color: #D9D9D9;
-            width: 200px;
-            height: 400px;
-            text-align: center; 
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            margin: 5px;
-        }
-
-        .abajo2 {
-            background-color: #D9D9D9;
-            width: 100px;  
-            height: 400px; 
-            text-align: center; 
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            margin: 5px;
-        }
-
-        .parrafo1, .parrafo2, .parrafo3 {
-            margin: 5px;
-            font-size: 14px;
-        }
-
-        .confetti {
-            position: fixed;
-            top: -10px;
-            width: 10px;
-            height: 10px;
-            background-color: #ff69b4;
-            opacity: 0.6;
-            border-radius: 50%;
-            animation: confetti-animation 3s linear infinite;
-        }
-
-        @keyframes confetti-animation {
-            0% { transform: translateY(0) rotate(0deg); opacity: 0.6; }
-            100% { transform: translateY(1000px) rotate(360deg); opacity: 0; }
-        }
-
-        #inviteButton {
-            padding: 10px 20px;
-            font-size: 20px;
-            color: #fff;
-            background-color: #ff69b4;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            display: block;
-            margin: 20px auto; /* Centrar el botón */
-        }
-
-        #message {
-            display: none;
-            font-size: 24px;
-            color: #ff69b4;
-            text-align: center;
-            margin-top: 20px;
-        }
-    }
-    @media only screen and (min-width: 600px){
-            body {
-            background-color: rgb(105, 101, 101);
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-            header {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: rgb(0, 0, 0);
-            width: 100%;
-            padding: 20px;
-        }
-
-        header ul {
-            list-style: none;
-            display: flex;
-            color: red;
-            padding: 0;
-        }
-
-        header ul li {
-            margin: 10px;
-        }
-
-        .prueba .prueba2{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around; 
-            width: 110%;
-            height: auto;
-            margin: 15px 0;
-            background-color: rgb(0, 0, 0);
-            color: rgb(255, 255, 255);
-        }
-
-        img {
-            width: 150px;
-        }
-
-        .tz img {
-            border-radius: 100%;
-        }
-
-        h1 {
-            font-size: 24px;
-            color: rgb(136, 3, 3);
-        }
-
-        .caja {
-            width: 30%; 
-            height: auto;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .caja img {
-            border-radius: 70%;
-        }
-
-        .caja p {
-            font-size: 12px;
-            text-align: center; 
-        }
-
-        .kira {
-            color: white;
-        }
-
-        .inicio {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 20%;
-        }
-
-        .enlaces {
-            margin-top: 10px;
-        }
-
-        .conjunto {
-            display: flex; 
-            flex-direction: row;
-            margin: 20px 0; 
-        }
-
-        .abajo1, .abajo3 {
-            background-color: #D9D9D9;
-            width: 200px;
-            height: 400px;
-            text-align: center; 
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            margin: 5px;
-        }
-
-        .abajo2 {
-            background-color: #D9D9D9;
-            width: 100px;  
-            height: 400px; 
-            text-align: center; 
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            margin: 5px;
-        }
-
-        .parrafo1, .parrafo2, .parrafo3 {
-            margin: 5px;
-            font-size: 14px;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        .confetti {
-            position: fixed;
-            top: -10px;
-            width: 10px;
-            height: 10px;
-            background-color: #ff69b4;
-            opacity: 0.6;
-            border-radius: 50%;
-            animation: confetti-animation 3s linear infinite;
-        }
-
-        @keyframes confetti-animation {
-            0% { transform: translateY(0) rotate(0deg); opacity: 0.6; }
-            100% { transform: translateY(1000px) rotate(360deg); opacity: 0; }
-        }
-
-        #inviteButton {
-            padding: 10px 20px;
-            font-size: 20px;
-            color: #fff;
-            background-color: #ff69b4;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            display: block;
-            margin: 20px auto; /* Centrar el botón */
-        }
-
-        #message {
-            display: none;
-            font-size: 24px;
-            color: #ff69b4;
-            text-align: center;
-            margin-top: 20px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ignacio Lopez</title>
+  <style>
+    body {
+      background-color: rgb(105, 101, 101);
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
 
-        
-    </style>
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      width: 100%;
+      padding: 20px;
+    }
+
+    header ul {
+      list-style: none;
+      display: flex;
+      padding: 0;
+    }
+
+    header ul li {
+      margin: 10px;
+    }
+
+    header a {
+      text-decoration: none;
+      color: red;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: rgb(136, 3, 3);
+    }
+
+    h2.kira {
+      color: white;
+    }
+
+    .tz img {
+      width: 150px;
+      border-radius: 100%;
+    }
+
+    .inicio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .prueba2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: black;
+      color: white;
+      padding: 20px;
+    }
+
+    .caja {
+      width: 90%;
+      max-width: 300px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .caja img {
+      width: 100%;
+      border-radius: 70%;
+    }
+
+    .caja p {
+      font-size: 14px;
+      color: white;
+    }
+
+    #certificados {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      background-color: black;
+      color: white;
+    }
+
+    .certificado1, .certificado2, .certificado3, .certificado4, .certificado5 {
+      width: 250px;
+      text-align: center;
+    }
+
+    #certificados img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .conjunto {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    .abajo1, .abajo3 {
+      background-color: #D9D9D9;
+      width: 200px;
+      height: auto;
+      margin: 10px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .parrafo1, .parrafo3 {
+      font-size: 14px;
+    }
+
+    #inviteButton {
+      padding: 10px 20px;
+      font-size: 20px;
+      color: #fff;
+      background-color: #ff69b4;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      display: block;
+      margin: 20px auto;
+    }
+
+    #message {
+      display: none;
+      font-size: 24px;
+      color: #ff69b4;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .confetti {
+      position: fixed;
+      top: -10px;
+      width: 10px;
+      height: 10px;
+      background-color: #ff69b4;
+      opacity: 0.6;
+      border-radius: 50%;
+      animation: confetti-animation 3s linear infinite;
+    }
+
+    @keyframes confetti-animation {
+      0% { transform: translateY(0) rotate(0deg); opacity: 0.6; }
+      100% { transform: translateY(1000px) rotate(360deg); opacity: 0; }
+    }
+
+    /* Responsive */
+    @media (min-width: 600px) {
+      .prueba2 {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .caja {
+        width: 30%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="inicio">
-            <h1>Ignacio Lopez</h1>
-            <div class="tz img">
-                <img src="foto ignacio 2.jpeg" alt="Foto de Ignacio Lopez">
-            </div>
-            <h2 class="kira">Conoce más en mis redes sociales</h2>
-            <div class="enlaces">
-                <ul>
-                    <li><a href="https://www.instagram.com/i_am__tz_?igsh=MW04NWJhaGE2aWh2NA==" style="text-decoration: none; color: red;">Instagram</a></li>
-                    <li><a href="https://wa.me/qr/7X6JAJECWWGSC1" style="text-decoration: none; color: red;">WhatsApp</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100056829281839" style="text-decoration: none; color: red;">Facebook</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="prueba">
-            <div class="prueba2">
-                <div class="caja">
-                    <img src="talentos ignacio.png" alt="Ignacio's talents">
-                    <h1>Talentos</h1>
-                    <p>Me encanta hacer manualidades y todo lo que tenga que ver con detalles o tecnología.</p>
-                </div>
-    
-                <div class="caja">
-                    <img src="deporte 1.jpeg" alt="Deportes">
-                    <h1>Deportes</h1>
-                    <p>Taekwondo, voley y otras disciplinas.</p>
-                </div>
-    
-                <div class="caja">
-                    <img src="logros ignacio.jpg" alt="Logros destacados">
-                    <h1>Logros</h1>
-                    <p>Logros destacados... próximamente.</p>
-                </div>
-            </div>
-            
-        </div>
-
-        <div class="conjunto">
-            <div class="abajo1">
-                <p class="parrafo1">Cursos
-                    <br><br>Impresión 3D<br><br>
-                    UTN Excel: nivel fundamentos<br><br>
-                    Inglés<br><br>
-                    Word: junior<br><br>
-                    Junior Achievement Programación: nivel junior<br><br>
-                    Junior Achievement: contabilidad/finanzas<br><br>
-                    Junior Achievement: cuentas conmigo primer y segundo nivel 
-                </p>
-            </div>
-
-            <div class="abajo2">
-                <p class="parrafo2">Certificados</p>
-            </div>
-
-            <div class="abajo3">
-                <p class="parrafo3">Holaa</p>
-            </div>
-        </div>
-    </main>
-
-    <button id="inviteButton">¡Escríbeme!</button>
-    <div id="message">
-        <p>¡Gracias por tu interés!</p>
+  <header>
+    <div class="inicio">
+      <h1>Ignacio Lopez</h1>
+      <div class="tz">
+        <img src="foto ignacio 2.jpeg" alt="Foto de Ignacio Lopez">
+      </div>
+      <h2 class="kira">Conoce más en mis redes sociales</h2>
+      <div class="enlaces">
+        <ul>
+          <li><a href="https://www.instagram.com/i_am__tz_?igsh=MW04NWJhaGE2aWh2NA==" target="_blank">Instagram</a></li>
+          <li><a href="https://wa.me/qr/7X6JAJECWWGSC1" target="_blank">WhatsApp</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100056829281839" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
     </div>
+  </header>
 
-    <script>
-        document.getElementById("inviteButton").addEventListener("click", function() {
-            document.getElementById("message").style.display = "block";
-            startConfetti();
-            // Redirigir al enlace después de un breve delay
-            setTimeout(() => {
-                window.open('https://www.instagram.com/i_am__tz_/profilecard/?igsh=MW04NWJhaGE2aWh2NA==', '_blank');
-            }, 500);
-        });
+  <main>
+    <section class="prueba2">
+      <div class="caja">
+        <img src="talentos ignacio.png" alt="Talentos de Ignacio">
+        <h1>Talentos</h1>
+        <p>Me encanta hacer manualidades y todo lo que tenga que ver con detalles o tecnología.</p>
+      </div>
+      <div class="caja">
+        <img src="deporte 1.jpeg" alt="Ignacio practicando deportes">
+        <h1>Deportes</h1>
+        <p>Taekwondo, voley y otras disciplinas.</p>
+      </div>
+      <div class="caja">
+        <img src="logros ignacio.jpg" alt="Logros de Ignacio">
+        <h1>Logros</h1>
+        <p>Logros destacados... próximamente.</p>
+      </div>
+    </section>
 
-        function startConfetti() {
-            for (let i = 0; i < 300; i++) {
-                const confetti = document.createElement('div');
-                confetti.classList.add('confetti');
-                confetti.style.left = Math.random() * window.innerWidth + 'px';
-                confetti.style.animationDuration = 2 + Math.random() * 3 + 's';
-                confetti.style.animationDelay = Math.random() * 2 + 's';
-                document.body.appendChild(confetti);
-            }
-        }
-    </script>
+    <section id="certificados">
+      <div class="certificado1">
+        <img src="certificadso/capacitacion laboral y fabricasion digital.jpeg" alt="Capacitación laboral y fabricación digital">
+        <h1>Capacitación laboral y fabricación digital</h1>
+      </div>
+      <div class="certificado2">
+        <img src="certificadso/segundo nivel de ingles.jpeg" alt="Segundo nivel de inglés">
+        <h1>Inglés 2</h1>
+      </div>
+      <div class="certificado3">
+        <img src="certificadso/level 1 ingles.jpeg" alt="Primer nivel de inglés">
+        <h1>Inglés 1</h1>
+      </div>
+      <div class="certificado4">
+        <img src="certificadso/word.jpeg" alt="Certificado de Word junior">
+        <h1>Word Junior</h1>
+      </div>
+      <div class="certificado5">
+        <img src="certificadso/diseño de paginas web.jpeg" alt="Certificado de diseño de páginas web">
+        <h1>Diseño de página web</h1>
+      </div>
+    </section>
+
+    <section class="conjunto">
+      <div class="abajo1">
+        <p class="parrafo1">
+          Cursos<br><br>
+          Impresión 3D<br>
+          UTN Excel: nivel fundamentos<br>
+          Inglés<br>
+          Word: junior<br>
+          Programación Junior Achievement<br>
+          Contabilidad / Finanzas Junior Achievement<br>
+          "Cuentas Conmigo" - niveles 1 y 2
+        </p>
+      </div>
+      <div class="abajo3">
+        <p class="parrafo3">¡Hola!</p>
+      </div>
+    </section>
+  </main>
+
+  <button id="inviteButton">¡Escríbeme!</button>
+  <div id="message">
+    <p>¡Gracias por tu interés!</p>
+  </div>
+
+  <script>
+    document.getElementById("inviteButton").addEventListener("click", function () {
+      document.getElementById("message").style.display = "block";
+      startConfetti();
+      setTimeout(() => {
+        window.open('https://www.instagram.com/i_am__tz_/profilecard/?igsh=MW04NWJhaGE2aWh2NA==', '_blank');
+      }, 500);
+    });
+
+    function startConfetti() {
+      for (let i = 0; i < 300; i++) {
+        const confetti = document.createElement('div');
+        confetti.classList.add('confetti');
+        confetti.style.left = Math.random() * window.innerWidth + 'px';
+        confetti.style.animationDuration = 2 + Math.random() * 3 + 's';
+        confetti.style.animationDelay = Math.random() * 2 + 's';
+        document.body.appendChild(confetti);
+      }
+    }
+  </script>
 </body>
 </html>
